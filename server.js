@@ -3,8 +3,9 @@ function sleep(ms) {
 }
 
 async function main() {
+  const name = process.env.YOUR_FIRST_NAME;
   while(true) {
-    console.log('Containers rule!');
+    console.log(`Hello ${name} Containers rule!`);
     await sleep(5000);
   }
 }
